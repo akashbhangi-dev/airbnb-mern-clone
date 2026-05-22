@@ -1,0 +1,32 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/akashbhangi-dev/airbnb-mern-clone#readme",
+  "bugs": {
+    "url": "https://github.com/akashbhangi-dev/airbnb-mern-clone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashbhangi-dev/airbnb-mern-clone.git"
+  },
+  "license": "ISC",
+  "author": "Akash Bhangi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "init-db": "node db/init.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "joi": "^18.2.1",
+    "mongoose": "^9.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
