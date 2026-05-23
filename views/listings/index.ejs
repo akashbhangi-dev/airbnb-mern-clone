@@ -1,0 +1,14 @@
+<% layout("layouts/boilerplate") %>
+    <h1>All Listings</h1>
+    <a href="/listings/new"><button>New Listing Add</button></a>
+    <%for(let listing of allListings){%>
+        <a href="/listings/<%= listing._id %>">
+            <p>
+                <%= listing.title %>
+            </p>
+        </a>
+        <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+            <button>Delete</button>
+        </form>
+        <br>
+        <%}%>
