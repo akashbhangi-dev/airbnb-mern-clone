@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    margin-bottom: 5rem;
+}
+
+.navbar {
+    background-color: white !important;
+    padding: 0.75rem 3rem;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.fa-airbnb {
+    font-size: 2.5rem;
+}
+
+.navbar-brand {
+    color: #df1515 !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0rem 3rem;
+}
+
+.container-footer p {
+    font-size: 0.875rem;
+    color: #222222;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #222222;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #ff3b3f;
+}
+
+.card {
+    border: none !important;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    object-fit: cover !important;
+    height: 20rem !important;
+    border-radius: 1rem;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    color: #717171;
+}
+
+.card-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222222;
+}

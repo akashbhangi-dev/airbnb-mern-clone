@@ -13,6 +13,8 @@ app.engine("ejs", ejsMate);
 
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
+
 async function main() {
     await mongoose.connect("mongodb://localhost:27017/airbnb-mern-clone");
 }
