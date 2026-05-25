@@ -96,3 +96,58 @@ footer {
     font-weight: 600;
     color: #222222;
 }
+
+.show-card img {
+    border-radius: 1rem;
+    height: 25rem !important;
+    object-fit: cover;
+}
+
+.show-card h3 {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.show-card .description {
+    font-size: 0.95rem;
+    color: #222222;
+    margin-top: 0.5rem;
+}
+
+.show-card .price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222222;
+}
+
+.show-card .location {
+    margin-top: 1rem;
+    color: #222222;
+}
+
+.show-card .country {
+    margin-top: 0.5rem;
+    color: #222222;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 0.6rem 2.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.btn-link {
+    text-decoration: none !important;
+}
