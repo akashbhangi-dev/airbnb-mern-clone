@@ -6,6 +6,7 @@ const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
+const ExpressError = require("./util/ExpressError.js")
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -70,4 +71,18 @@ app.delete("/listings/:id", async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server started at port ${port}, http://localhost:${port}`);
+});
+
+
+app.all(/.*/, (req, res, next) => {
+    next(new ExpressError(404, "Page Not Found!"));
+});
+
+app.use((err, req, res, next) => {
+    console.log(err);
+
+    const status = err.status || 500;
+    const message = err.message || "Something went wrong!";
+    res.render("error.ejs", { err });
+
 });
